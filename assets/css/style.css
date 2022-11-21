@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  min-width: 600px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.clock {
+  font-size: 3em;
+  text-align: center;
+}
+
+.start {
+  width: 100px;
+  height: 50px;
+}
+
+.pause {
+  width: 100px;
+  height: 50px;
+}
+
+.restart {
+  width: 110px;
+  height: 50px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border: none;
+}
+
+button:hover {
+  box-shadow: hsla(0, 0%, 0%, 0.41) 3px 3px 3px 3px;
+}
+
+button span {
+  text-transform: uppercase;
+}
+
+.pause-color {
+  color: red;
+}
